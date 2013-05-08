@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>祖光寺</title>
+    <title>祖光寺 - 文档资料</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
@@ -21,39 +21,26 @@
           <li>
             <a href="intro.htm">简介</a>
           </li>
-          <li>
+          <li class="selected">
             <a href="driver.htm">文档</a>
           </li>
-          <li class="selected">
+          <li>
             <a href="board.htm">留言</a>
           </li>
         </ul>
       </div>
       <div class="body">
-        <div class="bd_wp">
-			<h3>留言</h3>
-			<p class="bd_intro">如果你有什么好的建议和想法，欢迎向我们倾述。</p>
-			    <div id="disqus_thread"></div>
-				<script type="text/javascript">
-					window.onload = function() {
-						var js = document.createElement("script");js.type = "text/javascript";
-						js.src = "js/jquery-1.7.2.min.js";
-						js.onload = js.onreadystatechange = function(){ 
-							var disqus_shortname = 'zugu'; // required: replace example with your forum shortname
-							var dsq = document.createElement("script");dsq.type = "text/javascript";
-							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-							dsq.onload = dsq.onreadystatechange = function(){
-								
-							}
-							head.appendChild(dsq);
-						}
-						
-						var head = document.getElementsByTagName('head')[0];
-						head.appendChild(js);	
-						
-					}
-				</script>
-		</div>
+        <div id="driver" class="bd_wp">
+          <h3>文档资料</h3>
+          <ul>
+			<li><a href="/doc/祖光寺网站详细开发文档.doc" class="d_doc">祖光寺网站详细开发文档.doc</a></li>
+			<li><a href="/doc/系统结构图.png" class="d_png">系统结构图.png</a></li>
+			<li><a href="/doc/系统用例图.png" class="d_png">系统用例图.png</a></li>
+			<li><a href="/doc/数据库结构图.png" class="d_png">数据库结构图.png</a></li>
+			<li><a href="/doc/开发流程日程安排表.xls" class="d_xls">开发流程日程安排表.xls</a></li>
+			<li><a href="/doc/论坛板块.docx" class="d_docx">论坛板块.docx</a></li>	
+		  </ul>
+        </div>
       </div>
       <div class="footer">
         <ul>
@@ -80,9 +67,4 @@
       </div>
     </div>
   </body>
-  
- <script type="text/javascript">
-    var disqus_shortname = 'zugua'; // required: replace example with your forum shortname
-</script>
-	
 </html>

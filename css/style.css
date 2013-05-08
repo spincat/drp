@@ -59,17 +59,14 @@ clear: both;
 	padding:0 10px;
 	overflow:hidden;
 }
-.body div#featured{
+.body #intro{
 	background:url(../images/sys-structure.png) no-repeat 100% 20%;
 }
-.body div#featured h3{
-	color: #000;
-	font-size: 20px;
+.body #intro h3{
+	width: 610px;
 	margin: 20px 0;
-	width: 490px;
-	font-weight: normal;
 }
-.body div#featured p{
+.body #intro p{
 	width:610px;
 	color:#5d5d5d;
 	font-size:14px;
@@ -78,7 +75,7 @@ clear: both;
 	text-align:justify;
 	margin:0;
 }
-.body div#featured input{
+.body #intro input{
 	background:url(../images/interface.jpg) no-repeat;
 	border:0;
     height:48px;
@@ -89,71 +86,71 @@ clear: both;
 	cursor:pointer;
 	outline:none;
 }
+
+#intro ul {
+	list-style:decimal;
+	margin-left: -16px;
+}
+
 .body ul.blog{
 	list-style:none;
 	margin:40px 0 0;
-	padding:0 0 50px;
+	padding:0 0 30px 0;
 	background:url(../images/separator.jpg) no-repeat center top;
 	overflow:hidden;
 }
-.body ul.blog li:first-child{
-	margin:60px 0 0;
+.body ul.blog li.show_list:first-child{
+	margin:40px 0 0;
 }
-.body ul.blog li{
+.body ul.blog li.show_list{
 	float:left;
-	background:url(../images/interface.jpg) no-repeat 0 -68px!important;
-	margin:60px 0 0 48px;
-	height:400px;
+	background:rgba(211, 215, 212, 0.34);
+	margin:40px 0 0 48px;
+	height:170px;
 	padding:0;
+	border: 1px solid #D3D4CF;
+	border-radius: 5px;
 }
-.body ul.blog li div{
-	width:281px;
-	height:380px;
+.body ul.blog li.show_list div{
+	width:279px;
 	text-align:center;
 	padding: 8px 0 20px 0;
 	float:none;
 	margin:0;
 	background:none;
 }
-.body ul.blog li div a img{
+.body ul.blog li.show_list div a img{
 	border:0;
 	margin:0 0 0 -3px;
 }
-.body ul.blog li div a img:hover{
+.body ul.blog li.show_list div a img:hover{
 	filter:alpha(opacity=80);
 	opacity:0.8;
 }
-.body ul.blog li div p{
+.body ul.blog li.show_list div p{
 	width:258px;
-	text-align:justify;
 	color:#828081;
-	margin:17px 0 0 10px;
+	text-align:left;
 	line-height:20px;
 	font-size:12px;
 	background:none;
 	padding:0;
 }
-.body ul.blog li div a:first-child{
+.body ul.blog li.show_list div a:first-child{
 	margin:0;
 	padding:0;
 	background:none;
 	width:auto;
 }
-.body ul.blog li div a:hover{
+.body ul.blog li.show_list div a:hover{
 	color:#F78117;
 }
-.body ul.blog li div a{
+.body ul.blog li.show_list div a{
 	color:#606060;
-	font-style:italic;
 	text-decoration:none;
-	padding:98px 0 0;
-	margin:32px auto 0;
+	padding:20px 0 0;
 	display:block;
-	width: 150px;
-	background:url(../images/button-more.jpg) no-repeat center top;
-	outline:none;
 	font-size:14px;
-	font-weight:normal;
 	text-shadow: 0 1px 0 #fcfcfc;
 }
 .body h3{
@@ -166,7 +163,6 @@ clear: both;
 .body p{
 	
 	font-size:14px;
-	text-align:justify;
 	color:#636363;
 	margin:0 0 20px;
 	line-height:21px;
@@ -176,48 +172,48 @@ clear: both;
 	color:#636363;
 }
 .body ul{
-	list-style:decimal;
-    margin-left:-16px;
+	list-style:none;
+    margin: 0;
 }
 .body ul li{
-	padding:5px 0;
+	padding:4px 0;
 }
-.body ul li div.featured{
+.body ul li div.intro{
 	background:url(../images/interface.jpg) no-repeat 0 -68px;
 	width:281px;
 	height:292px;
 	text-align: center;
 	margin:0;
 }
-.body ul li div.featured img{
+.body ul li div.intro img{
 	margin:10px 0 0 -3px;
 	border:0;
 }
-.body ul li div.featured ul{
+.body ul li div.intro ul{
 	overflow:hidden;
 	margin:2px 0 0 10px;
 	
 }
-.body ul li div.featured ul li:first-child{
+.body ul li div.intro ul li:first-child{
 	margin:0;
 }
-.body ul li div.featured ul li{
+.body ul li div.intro ul li{
 	float:left;
 	margin:0 0 0 18px;
 	background:none;
 	padding:0;
 }
-.body ul li div.featured ul li a{
+.body ul li div.intro ul li a{
 	padding:0;
 }
-.body ul li div.featured ul li a img{
+.body ul li div.intro ul li a img{
 	margin:0;
 }
-.body ul li div.featured ul li a img:hover{
+.body ul li div.intro ul li a img:hover{
 	filter:alpha(opacity=80);
 	opacity:0.8;
 }
-.body ul li div.featured a{
+.body ul li div.intro a{
 	clear:both;
 	display:block;
 	font-size:13px;
@@ -366,6 +362,79 @@ clear: both;
 	margin-bottom:60px;
 }
 
-.disqus_thread #fotter {
+#disqus_thread  #fotter {
 	display:none;
+}
+#disqus_thread  a {
+	color:#5b5b5b;
+}
+
+/* Driver */
+
+#driver ul {
+	height:200px;
+	padding: 0;
+}
+#driver li {
+	width: 90px;
+	float: left;
+	margin: 20px 60px 0 0;
+	text-align: center;
+}
+
+#driver li a {
+	color: #5b5b5b;
+	font-size: 10px;
+	font-family: Trebuchet MS;
+	text-decoration: none;
+	display: block;
+	padding-top: 120px;
+}
+
+#driver li a:hover {
+	color:#f78117;
+} 
+
+#driver a.d_doc {
+	background:url(../images/fmg/word.png) no-repeat center top;
+}
+#driver a.d_png {
+	background:url(../images/fmg/image.png) no-repeat center top;
+}
+#driver a.d_xls {
+	background:url(../images/fmg/excel.png) no-repeat center top;
+}
+#driver a.d_docx {
+	background:url(../images/fmg/word.png) no-repeat center top;
+}
+
+/**/
+
+#trends ul {
+	padding-left:20px;
+	list-style:Square;
+}
+#trends ul  li{
+	color:#5e5e5e;
+	margin:12px 0;
+}
+#trends span.time {
+	color:#5b5b5b;
+	margin-right:20px;
+}
+
+#index h3 span {
+	margin:0 10px;
+	font-size:15px;
+	font-weight: normal;
+	font-family: "Microsoft Yahei","SimHei",Helvetica,Arial;
+}
+
+#index.bd_wp {
+	min-height:0;
+}
+
+.ishow.blog ul{
+	height: 150px;
+	list-style:Circle; 
 }

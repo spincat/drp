@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>祖光寺</title>
+    <title>祖光寺 - 项目动态</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
   </head>
@@ -15,7 +15,7 @@
           <li>
             <a href="index.htm">首页</a>
           </li>
-		  <li>
+		  <li class="selected">
             <a href="trends.htm">动态</a>
           </li>
           <li>
@@ -24,36 +24,25 @@
           <li>
             <a href="driver.htm">文档</a>
           </li>
-          <li class="selected">
+          <li>
             <a href="board.htm">留言</a>
           </li>
         </ul>
       </div>
       <div class="body">
-        <div class="bd_wp">
-			<h3>留言</h3>
-			<p class="bd_intro">如果你有什么好的建议和想法，欢迎向我们倾述。</p>
-			    <div id="disqus_thread"></div>
-				<script type="text/javascript">
-					window.onload = function() {
-						var js = document.createElement("script");js.type = "text/javascript";
-						js.src = "js/jquery-1.7.2.min.js";
-						js.onload = js.onreadystatechange = function(){ 
-							var disqus_shortname = 'zugu'; // required: replace example with your forum shortname
-							var dsq = document.createElement("script");dsq.type = "text/javascript";
-							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-							dsq.onload = dsq.onreadystatechange = function(){
-								
-							}
-							head.appendChild(dsq);
-						}
-						
-						var head = document.getElementsByTagName('head')[0];
-						head.appendChild(js);	
-						
-					}
-				</script>
-		</div>
+        <div id="trends"class="bd_wp">
+          <h3>项目动态</h3>
+          <ul>
+			<li><span class="time">2013-04-26</span> 确定和购买了网站域名 </li>	
+			<li><span class="time">2013-04-29</span> 设计完成了系统流程 </li>			
+			<li><span class="time">2013-04-30</span> 设计完成了系统数据库结构 </li>	
+			<li><span class="time">2013-04-30</span> 拟定了《网站详细开发文档》 </li>				
+			<li><span class="time">2013-05-07</span> 确定了项目开发的流程和日程安排 </li>
+			<li><span class="time">2013-05-07</span> 设计完成了网站LOGO初稿 </li>
+			<li><span class="time">2013-05-08</span> 确定了网站论坛的主要板块 </li>
+			<li><span class="time">2013-05-08</span> 设计和部署了项目开发驱动系统 (The DRP System) </li>
+		  </ul>
+        </div>
       </div>
       <div class="footer">
         <ul>
@@ -80,9 +69,4 @@
       </div>
     </div>
   </body>
-  
- <script type="text/javascript">
-    var disqus_shortname = 'zugua'; // required: replace example with your forum shortname
-</script>
-	
 </html>
