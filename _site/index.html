@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>祖光寺</title>
+	<link rel="shortcut icon" type="/image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  </head>
+   
+<body>
+
+    <div class="page">
+      <div class="header">
+        <a href="/" id="logo"><img src="/images/logo.png" alt=""/></a>
+        <ul>
+          <li class="selected">
+            <a href="/">首页</a>
+          </li>
+		  <li>
+            <a href="/trends">动态</a>
+          </li>
+          <li>
+            <a href="/intro">简介</a>
+          </li>
+          <li>
+            <a href="/driver">文档</a>
+          </li>
+          <li>
+            <a href="/board">留言</a>
+          </li>
+        </ul>
+      </div>
+	  
+      <div class="body">
+	  
+        <div id="index" class="bd_wp">
+<h3>项目开发驱动系统<span>(The DRP System)</span></h3>
+<p>请随时关注开发动态，下载最新的项目文档，如果发现问题请及时留言。</p>
+<p>一般情况，留言信息在每晚八点会得到回复。如有特殊情况请 <a href="mailto:miqic911@gmail.com">Email</a> 开发人员。</p>
+</div>
+
+
+
+
+<ul class="blog ishow">
+<li class="show_list">
+<div>
+<ul>
+<li><p>确定了项目开发的流程和日程安排 </p></li>
+<li><p>设计完成了网站LOGO初稿 </p></li>
+<li><p>确定了网站论坛的主要板块 </p></li>
+<li><p>设计和部署了项目开发驱动系统</p></li>
+<li><p>祖光论坛Beta版开始内测 </p></li>
+</ul>
+<a href="/trends.htm">最新动态</a>
+</div>
+</li>
+<li class="show_list">
+<div>
+<ul>
+<li><p>系统结构图.png </p></li>
+<li><p>系统用例图.png </p></li>
+<li><p>数据库结构图.png </p></li>
+<li><p>开发流程日程安排表.xls </p></li>
+<li><p>论坛板块.docx</p></li>
+</ul>
+<a href="/driver.htm">最新文档</a>
+</div>
+</li>
+<li class="show_list">
+<div>
+<ul>
+<li><p>LastCover：请在这里添加留言</p></li>
+</ul>
+<a href="/board.htm">最新留言</a>
+</div>
+</li>
+</ul>
+
+
+		
+      </div>
+	  
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/intro">About</a>
+          </li>
+          <li>
+            <a href="/trends">Rrends</a>
+          </li>
+          <li>
+            <a href="/driver">Driver</a>
+          </li>
+        </ul>
+        <p>&#169; 2013 Zuguang.org 
+        </p>
+        <div class="connect">
+          <a href="#" id="facebook">facebook</a>
+          <a href="#" id="twitter">twitter</a>
+          <a href="http://www.youtube.com/fwtemplates" id="vimeo">vimeo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+		var disqus_shortname = 'zugua';
+		window.onload = function() {
+			setTimeout(function(){
+			// piwik
+			var pjs = document.createElement("script");
+			var psc = "http://www.hzsj.org/piwik/";
+			pjs.type = "text/javascript";
+			pjs.src = psc+"piwik.js";
+			pjs.onload = pjs.onreadystatechange = function(){  
+				if( !pjs.readyState || (pjs.readyState && pjs.readyState == 'loaded')){ 
+					try {
+							var piwikTracker = Piwik.getTracker(psc+'piwik.php',4);
+							piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+					} catch( err ) {}
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			//disqus
+			if(document.getElementById("board")){
+				var dsq = document.createElement("script");dsq.type = "text/javascript";
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				head.appendChild(dsq);
+			}
+			head.appendChild(pjs);	
+			},100);
+		};
+	</script>
+    <noscript>
+		<p><img src="http://www.hzsj.org/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+</body>
+</html>
+
+

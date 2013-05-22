@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>留言 - 祖光寺</title>
+	<link rel="shortcut icon" type="/image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  </head>
+   
+<body>
+
+    <div class="page">
+      <div class="header">
+        <a href="/" id="logo"><img src="/images/logo.png" alt=""/></a>
+        <ul>
+          <li class="selected">
+            <a href="/">首页</a>
+          </li>
+		  <li>
+            <a href="/trends">动态</a>
+          </li>
+          <li>
+            <a href="/intro">简介</a>
+          </li>
+          <li>
+            <a href="/driver">文档</a>
+          </li>
+          <li>
+            <a href="/board">留言</a>
+          </li>
+        </ul>
+      </div>
+	  
+      <div class="body">
+	  
+        <div id="board" class="bd_wp">
+<h3>留言</h3>
+<p class="bd_intro">如果你有什么好的建议和想法，欢迎向我们倾述。</p>
+<div id="disqus_thread"></div>
+</div>
+
+
+		
+      </div>
+	  
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/intro">About</a>
+          </li>
+          <li>
+            <a href="/trends">Rrends</a>
+          </li>
+          <li>
+            <a href="/driver">Driver</a>
+          </li>
+        </ul>
+        <p>&#169; 2013 Zuguang.org 
+        </p>
+        <div class="connect">
+          <a href="#" id="facebook">facebook</a>
+          <a href="#" id="twitter">twitter</a>
+          <a href="http://www.youtube.com/fwtemplates" id="vimeo">vimeo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+		var disqus_shortname = 'zugua';
+		window.onload = function() {
+			setTimeout(function(){
+			// piwik
+			var pjs = document.createElement("script");
+			var psc = "http://www.hzsj.org/piwik/";
+			pjs.type = "text/javascript";
+			pjs.src = psc+"piwik.js";
+			pjs.onload = pjs.onreadystatechange = function(){  
+				if( !pjs.readyState || (pjs.readyState && pjs.readyState == 'loaded')){ 
+					try {
+							var piwikTracker = Piwik.getTracker(psc+'piwik.php',4);
+							piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+					} catch( err ) {}
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			//disqus
+			if(document.getElementById("board")){
+				var dsq = document.createElement("script");dsq.type = "text/javascript";
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				head.appendChild(dsq);
+			}
+			head.appendChild(pjs);	
+			},100);
+		};
+	</script>
+    <noscript>
+		<p><img src="http://www.hzsj.org/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+</body>
+</html>
+
+

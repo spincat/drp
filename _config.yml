@@ -1,0 +1,18 @@
+auto:	          true
+
+markdown:         rdiscount
+pygments:         true
+paginate:         6
+permalink:        /:title
+
+title:            祖光寺
+url:              http://zuguang.org
+author:
+    name:         Spincat
+    weibo:        http://weibo.com/spincat
+    email:        miqic911@gmail.com 
+
+description:      "祖光寺官方网站"
+
+copyright: 2013 Zuguang.org
+

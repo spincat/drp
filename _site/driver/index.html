@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>文档资料 - 祖光寺</title>
+	<link rel="shortcut icon" type="/image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  </head>
+   
+<body>
+
+    <div class="page">
+      <div class="header">
+        <a href="/" id="logo"><img src="/images/logo.png" alt=""/></a>
+        <ul>
+          <li class="selected">
+            <a href="/">首页</a>
+          </li>
+		  <li>
+            <a href="/trends">动态</a>
+          </li>
+          <li>
+            <a href="/intro">简介</a>
+          </li>
+          <li>
+            <a href="/driver">文档</a>
+          </li>
+          <li>
+            <a href="/board">留言</a>
+          </li>
+        </ul>
+      </div>
+	  
+      <div class="body">
+	  
+        <div id="driver" class="bd_wp">
+  <h3>文档资料</h3>
+  <ul>
+    <li><a href="/doc/祖光寺网站详细开发文档.doc" class="d_doc">祖光寺网站详细开发文档.doc</a></li>
+    <li><a href="/doc/系统结构图.png" class="d_png">系统结构图.png</a></li>
+    <li><a href="/doc/系统用例图.png" class="d_png">系统用例图.png</a></li>
+    <li><a href="/doc/数据库结构图.png" class="d_png">数据库结构图.png</a></li>
+    <li><a href="/doc/开发流程日程安排表.xls" class="d_xls">开发流程日程安排表.xls</a></li>
+    <li><a href="/doc/论坛板块.docx" class="d_docx">论坛板块.docx</a></li>  
+  </ul>
+</div>
+
+
+		
+      </div>
+	  
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/intro">About</a>
+          </li>
+          <li>
+            <a href="/trends">Rrends</a>
+          </li>
+          <li>
+            <a href="/driver">Driver</a>
+          </li>
+        </ul>
+        <p>&#169; 2013 Zuguang.org 
+        </p>
+        <div class="connect">
+          <a href="#" id="facebook">facebook</a>
+          <a href="#" id="twitter">twitter</a>
+          <a href="http://www.youtube.com/fwtemplates" id="vimeo">vimeo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+		var disqus_shortname = 'zugua';
+		window.onload = function() {
+			setTimeout(function(){
+			// piwik
+			var pjs = document.createElement("script");
+			var psc = "http://www.hzsj.org/piwik/";
+			pjs.type = "text/javascript";
+			pjs.src = psc+"piwik.js";
+			pjs.onload = pjs.onreadystatechange = function(){  
+				if( !pjs.readyState || (pjs.readyState && pjs.readyState == 'loaded')){ 
+					try {
+							var piwikTracker = Piwik.getTracker(psc+'piwik.php',4);
+							piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+					} catch( err ) {}
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			//disqus
+			if(document.getElementById("board")){
+				var dsq = document.createElement("script");dsq.type = "text/javascript";
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				head.appendChild(dsq);
+			}
+			head.appendChild(pjs);	
+			},100);
+		};
+	</script>
+    <noscript>
+		<p><img src="http://www.hzsj.org/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+</body>
+</html>
+
+

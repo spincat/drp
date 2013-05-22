@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<link rel="shortcut icon" type="/image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  </head>
+   
+<body>
+
+    {{ content }}
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+		var disqus_shortname = 'zugua';
+		window.onload = function() {
+			setTimeout(function(){
+			// piwik
+			var pjs = document.createElement("script");
+			var psc = "http://www.hzsj.org/piwik/";
+			pjs.type = "text/javascript";
+			pjs.src = psc+"piwik.js";
+			pjs.onload = pjs.onreadystatechange = function(){  
+				if( !pjs.readyState || (pjs.readyState && pjs.readyState == 'loaded')){ 
+					try {
+							var piwikTracker = Piwik.getTracker(psc+'piwik.php',4);
+							piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+					} catch( err ) {}
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			//disqus
+			if(document.getElementById("board")){
+				var dsq = document.createElement("script");dsq.type = "text/javascript";
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				head.appendChild(dsq);
+			}
+			head.appendChild(pjs);	
+			},100);
+		};
+	</script>
+    <noscript>
+		<p><img src="http://www.hzsj.org/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+</body>
+</html>
+
+

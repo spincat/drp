@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>祖光寺 - 项目动态</title>
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <a href="index.html" id="logo"><img src="images/logo.png" alt=""/></a>
+        <ul>
+          <li>
+            <a href="index.htm">首页</a>
+          </li>
+		  <li class="selected">
+            <a href="trends.htm">动态</a>
+          </li>
+          <li>
+            <a href="intro.htm">简介</a>
+          </li>
+          <li>
+            <a href="driver.htm">文档</a>
+          </li>
+          <li>
+            <a href="board.htm">留言</a>
+          </li>
+        </ul>
+      </div>
+      <div class="body">
+        <div id="trends"class="bd_wp">
+          <h3>项目动态</h3>
+          <ul>
+			<li><span class="time">2013-04-26</span> 确定和购买了网站域名 </li>	
+			<li><span class="time">2013-04-29</span> 设计完成了系统流程 </li>			
+			<li><span class="time">2013-04-30</span> 设计完成了系统数据库结构 </li>	
+			<li><span class="time">2013-04-30</span> 拟定了《网站详细开发文档》 </li>				
+			<li><span class="time">2013-05-07</span> 确定了项目开发的流程和日程安排 </li>
+			<li><span class="time">2013-05-07</span> 设计完成了网站LOGO初稿 </li>
+			<li><span class="time">2013-05-08</span> 确定了网站论坛的主要板块 </li>
+			<li><span class="time">2013-05-08</span> 设计和部署了项目开发驱动系统 (The DRP System) </li>
+			<li><span class="time">2013-05-14</span> 祖光论坛Beta版开始内测 </li>
+		  </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <ul>
+          <li>
+            <a href="/index.htm">Home</a>
+          </li>
+          <li>
+            <a href="/intro.htm">About</a>
+          </li>
+          <li>
+            <a href="/trends.htm">Rrends</a>
+          </li>
+          <li>
+            <a href="/driver.htm">Driver</a>
+          </li>
+        </ul>
+        <p>&#169; Copyright 2013.
+        </p>
+        <div class="connect">
+          <a href="#" id="facebook">facebook</a>
+          <a href="#" id="twitter">twitter</a>
+          <a href="http://www.youtube.com/fwtemplates" id="vimeo">vimeo</a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- Piwik -->
+    <script type="text/javascript">
+		window.onload = function() {
+			setTimeout(function(){
+			// piwik
+			var pjs = document.createElement("script");
+			var psc = "http://www.hzsj.org/piwik/";
+			pjs.type = "text/javascript";
+			pjs.src = psc+"piwik.js";
+			pjs.onload = pjs.onreadystatechange = function(){  
+				if( !pjs.readyState || (pjs.readyState && pjs.readyState == 'loaded')){ 
+					try {
+							var piwikTracker = Piwik.getTracker(psc+'piwik.php',4);
+							piwikTracker.trackPageView();
+							piwikTracker.enableLinkTracking();
+					} catch( err ) {}
+				}
+			}
+
+			var head = document.getElementsByTagName('head')[0];
+			head.appendChild(pjs);	
+			},100);
+		};
+	</script>
+    <noscript>
+		<p><img src="http://www.hzsj.org/piwik/piwik.php?idsite=4" style="border:0" alt="" /></p>
+    </noscript>
+    <!-- End Piwik Tracking Code -->
+</html>
