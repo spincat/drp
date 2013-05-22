@@ -13,8 +13,8 @@
     <div class="page">
       <div class="header">
         <a href="/" id="logo"><img src="/images/logo.png" alt=""/></a>
-        <ul>
-          <li class="selected">
+        <ul id="nav">
+          <li>
             <a href="/">首页</a>
           </li>
 		  <li>
@@ -61,7 +61,7 @@
             <a href="/">Home</a>
           </li>
           <li>
-            <a href="/intro">About</a>
+            <a href="/intro">About</a> 
           </li>
           <li>
             <a href="/trends">Rrends</a>
@@ -79,6 +79,23 @@
         </div>
       </div>
     </div>
+	
+	<script type="text/javascript">
+		var ps = window.location.href;
+		var pr = /\/(\w+)\/$/.exec(ps);
+			var nav,nav_list;
+			var nav = document.getElementById("nav"); 
+			var nav_list = nav.getElementsByTagName("li");//返回相同的一组元素 
+			if(pr!=null){
+				for(var i=0;i<nav_list.length;i++){  
+				  var url = nav_list[i].getElementsByTagName("a")[0];
+				  if(url+"/" == ps)
+					nav_list[i].className = "selected";
+				}
+			}else{
+				nav_list[0].className = "selected";
+			}
+	</script>
 
     <!-- Piwik -->
     <script type="text/javascript">
