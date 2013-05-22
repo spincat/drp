@@ -55,6 +55,7 @@ clear: both;
 /*------------------------- Body ------------------------*/ 
 .body{
 	width:940px;
+	min-height:580px;
 	margin:0 auto;
 	padding:0 10px;
 	overflow:hidden;
