@@ -24,11 +24,11 @@ layout: page
 <li class="show_list">
 <div>
 <ul>
-<li><p>系统结构图.png </p></li>
 <li><p>系统用例图.png </p></li>
 <li><p>数据库结构图.png </p></li>
 <li><p>开发流程日程安排表.xls </p></li>
 <li><p>论坛板块.docx</p></li>
+<li><p>机房变迁方案.doc</p></li>
 </ul>
 <a href="/driver.htm">最新文档</a>
 </div>
